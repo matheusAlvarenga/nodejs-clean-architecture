@@ -1,0 +1,8 @@
+{
+  "name": "manguinho-yt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:matheusAlvarenga/nodejs-clean-architecture.git",
+  "author": "matheusAlvarenga <matheus.alvarenga0302@gmail.com>",
+  "license": "MIT"
+}
