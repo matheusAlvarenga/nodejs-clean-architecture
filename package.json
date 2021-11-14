@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "lint:husky": "lint-staged",
-    "test": "jest"
+    "test": "jest",
+    "test:staged": "jest"
   },
   "devDependencies": {
     "eslint": "^8.2.0",
