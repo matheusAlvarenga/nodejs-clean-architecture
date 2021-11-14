@@ -6,7 +6,8 @@
   "author": "matheusAlvarenga <matheus.alvarenga0302@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint:husky": "lint-staged"
+    "lint:husky": "lint-staged",
+    "test": "jest"
   },
   "lint-staged": {
     "*.js": [
@@ -19,6 +20,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.3",
     "husky": "^7.0.4",
+    "jest": "^27.3.1",
     "lint-staged": "^12.0.2"
   }
 }
