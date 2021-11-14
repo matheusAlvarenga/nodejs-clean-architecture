@@ -1,7 +1,8 @@
 {
     "env": {
         "es2021": true,
-        "node": true
+        "node": true,
+        "jest": true
     },
     "extends": [
         "airbnb-base"
@@ -11,5 +12,7 @@
         "sourceType": "module"
     },
     "rules": {
+        "class-methods-use-this": "off",
+        "consistent-return": "warn"
     }
 }
