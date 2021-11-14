@@ -56,6 +56,19 @@ describe('Login Router', () => {
     expect(httpResponse.statusCode).toBe(500);
   });
 
+  test('should call AuthUseCase with correct params', () => {
+    const { sut, authUseCaseSpy } = makeSut();
+    const httpRequest = {
+      body: {
+        email: 'any_email@mail.com',
+        password: 'any_password',
+      },
+    };
+    sut.route(httpRequest);
+    expect(authUseCaseSpy.email).toBe(httpRequest.body.email);
+    expect(authUseCaseSpy.password).toBe(httpRequest.body.password);
+  });
+
   test('should return 500 if no AuthUseCase is provided', () => {
     const sut = new LoginRouter();
     const httpRequest = {
@@ -68,7 +81,7 @@ describe('Login Router', () => {
     expect(httpResponse.statusCode).toBe(500);
   });
 
-  test('should return 500 has no auth method', () => {
+  test('should return 500 if AuthUseCase has no auth method', () => {
     const sut = new LoginRouter({});
     const httpRequest = {
       body: {
@@ -78,19 +91,6 @@ describe('Login Router', () => {
     };
     const httpResponse = sut.route(httpRequest);
     expect(httpResponse.statusCode).toBe(500);
-  });
-
-  test('should call AuthUseCase with correct params', () => {
-    const { sut, authUseCaseSpy } = makeSut();
-    const httpRequest = {
-      body: {
-        email: 'any_email@mail.com',
-        password: 'any_password',
-      },
-    };
-    sut.route(httpRequest);
-    expect(authUseCaseSpy.email).toBe(httpRequest.body.email);
-    expect(authUseCaseSpy.password).toBe(httpRequest.body.password);
   });
 
   test('should return 401 when invalid credentials are provided', () => {
