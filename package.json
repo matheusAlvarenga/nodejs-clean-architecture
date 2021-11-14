@@ -8,6 +8,7 @@
   "scripts": {
     "lint:husky": "lint-staged",
     "test": "jest",
+    "test:watch": "jest --watchAll",
     "test:staged": "jest"
   },
   "devDependencies": {
