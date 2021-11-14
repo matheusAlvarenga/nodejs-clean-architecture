@@ -5,16 +5,14 @@
   "repository": "git@github.com:matheusAlvarenga/nodejs-clean-architecture.git",
   "author": "matheusAlvarenga <matheus.alvarenga0302@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "lint:husky": "lint-staged"
+  },
   "lint-staged": {
     "*.js": [
       "eslint --fix",
       "git add ."
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": ["lint-staged"]
-    }
   },
   "devDependencies": {
     "eslint": "^8.2.0",
