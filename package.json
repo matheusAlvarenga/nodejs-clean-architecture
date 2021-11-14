@@ -9,12 +9,6 @@
     "lint:husky": "lint-staged",
     "test": "jest"
   },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add ."
-    ]
-  },
   "devDependencies": {
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
