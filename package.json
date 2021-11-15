@@ -10,7 +10,7 @@
     "test": "jest",
     "test:watch": "jest --watchAll --silent --verbose --noStackTrace",
     "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
-    "test:ci": "jest --coverage"
+    "test:ci": "jest --coverage --noStackTrace"
   },
   "devDependencies": {
     "eslint": "^8.2.0",
