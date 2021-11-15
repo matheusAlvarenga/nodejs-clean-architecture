@@ -8,8 +8,8 @@
   "scripts": {
     "lint:husky": "lint-staged",
     "test": "jest",
-    "test:watch": "jest --watchAll",
-    "test:staged": "jest --passWithNoTests"
+    "test:watch": "jest --watchAll --silent --verbose --noStackTrace",
+    "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace"
   },
   "devDependencies": {
     "eslint": "^8.2.0",
