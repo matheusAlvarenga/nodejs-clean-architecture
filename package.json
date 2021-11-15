@@ -9,7 +9,7 @@
     "lint:husky": "lint-staged",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "test:staged": "jest"
+    "test:staged": "jest --passWithNoTests"
   },
   "devDependencies": {
     "eslint": "^8.2.0",
