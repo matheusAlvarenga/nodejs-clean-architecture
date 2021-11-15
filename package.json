@@ -8,10 +8,10 @@
   "scripts": {
     "lint:husky": "lint-staged",
     "test": "jest --silent --verbose --noStackTrace --passWithNoTests",
-    "test:unit": "yarn test -- --watch -c jest.unit-config.js",
-    "test:int": "yarn test -- --watch -c jest.integration-config.js",
-    "test:staged": "yarn test -- --findRelatedTests",
-    "test:ci": "yarn test -- --coverage"
+    "test:unit": "yarn test --watch -c jest.unit-config.js",
+    "test:int": "yarn test --watch -c jest.integration-config.js",
+    "test:staged": "yarn test --findRelatedTests",
+    "test:ci": "yarn test --coverage"
   },
   "devDependencies": {
     "eslint": "^8.2.0",
