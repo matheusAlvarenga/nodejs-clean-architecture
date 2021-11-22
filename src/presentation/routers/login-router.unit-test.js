@@ -4,7 +4,7 @@ const {
 } = require('../errors');
 const {
   MissingParamError, InvalidParamError,
-} = require('../utils/errors');
+} = require('../../utils/errors');
 
 const makeEmailValidator = () => {
   class EmailValidatorSpy {
