@@ -1,11 +1,5 @@
 const bcrypt = require('bcrypt');
-
-class Encrypter {
-  async compare(string, hashedString) {
-    const isValid = await bcrypt.compare(string, hashedString);
-    return isValid;
-  }
-}
+const Encrypter = require('./encrypter');
 
 const makeSut = () => new Encrypter();
 
