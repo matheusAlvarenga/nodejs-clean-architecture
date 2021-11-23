@@ -4,4 +4,5 @@ module.exports = {
   coverageProvider: 'v8',
   preset: '@shelf/jest-mongodb',
   watchPathIgnorePatterns: ['globalConfig'],
+  testMatch: ['**/*.int-test.js', '**/*.unit-test.js'],
 };
