@@ -8,7 +8,7 @@
   "scripts": {
     "start": "node src/main/index.js",
     "lint:husky": "lint-staged",
-    "test": "jest --silent --verbose --noStackTrace --passWithNoTests",
+    "test": "jest --silent --verbose --noStackTrace --passWithNoTests --runInBand",
     "test:unit": "yarn test --watch -c jest.unit-config.js",
     "test:int": "yarn test --watch -c jest.integration-config.js",
     "test:staged": "yarn test --findRelatedTests",
