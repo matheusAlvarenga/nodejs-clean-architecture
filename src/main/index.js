@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-/* eslint-disable global-require */
 const MongoHelper = require('../infra/helpers/mongo-helper');
 const env = require('./config/env');
 

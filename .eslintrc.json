@@ -15,6 +15,7 @@
         "class-methods-use-this": "off",
         "consistent-return": "warn",
         "max-classes-per-file": "off",
-        "import/no-extraneous-dependencies": "off"
+        "import/no-extraneous-dependencies": "off",
+        "global-require": "off"
     }
 }
