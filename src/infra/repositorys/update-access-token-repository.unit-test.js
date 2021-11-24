@@ -16,6 +16,16 @@ class UpdateAccessTokenRepository {
   }
 }
 
+const makeSut = () => {
+  const userModel = db.collection('users');
+  const sut = new UpdateAccessTokenRepository(userModel);
+
+  return {
+    userModel,
+    sut,
+  };
+};
+
 describe('UpdateAccessToken Repository', () => {
   beforeAll(async () => {
     // eslint-disable-next-line no-underscore-dangle
@@ -32,8 +42,7 @@ describe('UpdateAccessToken Repository', () => {
   });
 
   test('should update the user with the given accessToken', async () => {
-    const userModel = db.collection('users');
-    const sut = new UpdateAccessTokenRepository(userModel);
+    const { sut, userModel } = makeSut();
 
     const fakeUser = await userModel.insertOne({ email: 'valid_email@mail.com', password: 'any_hashed_password' });
 
