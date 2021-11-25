@@ -27,15 +27,15 @@
 
 In the project directory, you can run:
 
-### `yarn test:unit` ,
+### `yarn test:unit`
 
 This command is used for run the jest testing for unit tests.
 
-### `yarn test:int` ,
+### `yarn test:int`
 
 This command is used for run the jest testing for integration tests.
 
-### `yarn test:ci` ,
+### `yarn test:ci`
 
 This command is used for run all tests and generate the coverage.
 
