@@ -8,7 +8,7 @@
 
 <h2 align="center">Node.js API with Clean Architecture</h2>
   <p align="center">
-    This repository isn't a real API! It's only a study about TDD and Clean Architecture. If you want to know more about this type of content, the <b>FREE</b> course access is in the link bellow. This project was created with 100% of coverage, as you can see in the image above. The only layer with no full coverage is Main, but it was used only for creating the instances and all the files are attached into other layers. The name of the tests files aren't the default extensions, but I created they with this names to make it more simple to understand what type of test is. If you feel weird about the tests without the beautiful icons, you can configure your text editor with the new test extensions and your problem will be solved.
+    This repository isn't a real API. It's meant to be a study about TDD and Clean Architecture. If you want to know more about this type of content, please refer to the <b>FREE</b> course in the link provided below. This project has been created with 100% of coverage, as you can see in the image above. The only layer with no full coverage is Main, but it has been used exclusively for creating the instances. All the files inside the Main layer are attached into other files. The tests files do not have the default extensions, but I have used such terminology to facilitate the identification of the kind of test.
     <br />
     <br />
     <a href="https://youtube.com/playlist?list=PL9aKtVrF05DyEwK5kdvzrYXFdpZfj1dsG"><strong>Watch the course »</strong></a>
